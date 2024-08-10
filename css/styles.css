@@ -6,6 +6,10 @@
   --heading-color: linear-gradient(to right, #4398ea 0%, #7492bf 100%);
   --black-text: #261f22;
   --white-text: #ffffff;
+
+  /* font-family */
+  --font-family: "Mulish", inter;
+  --heading-family: "Proza libre", inter;
 }
 
 /* reset */
@@ -13,4 +17,64 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: var(--font-family);
+}
+
+.home-container {
+}
+
+.header {
+  max-width: 144rem;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 9.5rem;
+}
+
+.line {
+  position: absolute;
+  border-bottom: 1px solid rgba(38, 31, 34, 0.1);
+  width: 100%;
+}
+
+.nav-menu .nav-list {
+  display: flex;
+  font-size: 1.6rem;
+  gap: 4.8rem;
+}
+
+.nav-link {
+  font-family: var(--heading-family);
+  color: var(--black-text);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+}
+
+.nav-close,
+.nav-toggle {
+  display: none;
 }
