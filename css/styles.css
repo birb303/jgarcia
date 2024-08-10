@@ -1,0 +1,16 @@
+/* variables */
+:root {
+  --body-color: #ffffff;
+  --primary-color: #4398ea;
+  --secondary-color: #7492bf;
+  --heading-color: linear-gradient(to right, #4398ea 0%, #7492bf 100%);
+  --black-text: #261f22;
+  --white-text: #ffffff;
+}
+
+/* reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
