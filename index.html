@@ -22,61 +22,120 @@
     />
   </head>
   <body>
-    <!-- nav -->
-    <section class="home-container" id="#home">
+    <!-- home section -->
+    <section class="home" id="home">
       <div class="line">
-        <header class="header" id="header">
-          <a href="#">
-            <div>
-              <img src="assets/svg/jgarcia..svg" alt="jgarcia." />
-            </div>
-          </a>
-          <nav class="nav-menu" id="nav-menu">
-            <ul class="nav-list">
-              <li>
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">Skills</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">Projects</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">Contact</a>
-              </li>
+        <header class="header">
+          <div>
+            <a href="#">
+              <img class="logo" src="assets/svg/jgarcia..svg" alt="jgarcia" />
+            </a>
+          </div>
+
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="nav-flex primary-navigation"
+            >
+              <li class="navfont"><a href="">Home</a></li>
+              <li class="navfont"><a href="">Skills</a></li>
+              <li class="navfont"><a href="">Projects</a></li>
+              <li class="navfont"><a href="">About</a></li>
+              <li class="navfont"><a href="">Contact</a></li>
             </ul>
           </nav>
-          <div class="social-links">
+          <div class="social-media">
             <a href="https://github.com/birb303">
-              <img src="assets/svg/Desktop Github.svg" alt="GitHub Profile" />
+              <img
+                src="assets/svg/Desktop Github.svg"
+                alt="GitHub Profile"
+                width="22"
+                height="22"
+              />
             </a>
             <a href="https://www.linkedin.com/in/jairo-garcia-5a1ab8249/">
               <img
                 src="assets/svg/Desktop LinkedIn.svg"
                 alt="LinkedIn Profile"
+                width="22"
+                height="22"
               />
             </a>
             <a href="https://dribbble.com/Webdevdes">
               <img
                 src="assets/svg/Desktop Dribbble.svg"
                 alt="Dribbble Profile"
+                width="23"
+                height="23"
               />
             </a>
           </div>
-          <!-- close button -->
-          <div class="nav-close">
-            <img src="assets/svg/close nav.svg" alt="close" />
-          </div>
-          <!-- toggle button -->
-          <div class="nav-toggle">
-            <img src="assets/svg/burger nav.svg" alt="open" />
-          </div>
         </header>
       </div>
+      <!-- hero -->
+      <div class="hero-down">
+        <div class="hero">
+          <p class="my-name">Hey there, I'm Jairo</p>
+          <h1 class="hero-h1">DESIGN AND DEVELOP</h1>
+          <h1 class="hero-h1-desktop">Web Designer Front-End Developer</h1>
+          <div class="hero-social-media">
+            <a href="https://github.com/birb303">
+              <img
+                src="assets/svg/Desktop Github.svg"
+                alt="GitHub Profile"
+                width="28"
+                height="28.76"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/jairo-garcia-5a1ab8249/">
+              <img
+                src="assets/svg/Desktop LinkedIn.svg"
+                alt="LinkedIn Profile"
+                width="28"
+                height="28"
+              />
+            </a>
+            <a href="https://dribbble.com/Webdevdes">
+              <img
+                src="assets/svg/Desktop Dribbble.svg"
+                alt="Dribbble Profile"
+                width="29"
+                height="29"
+              />
+            </a>
+          </div>
+          <p class="hero-p">
+            I enjoy making websites and I love helping businesses create their
+            own websites. If you’re interested in hiring me, just hit the
+            contact button.
+          </p>
+        </div>
+
+        <div class="desktop-button">
+          <a href="#">
+            <div class="button-flex">
+              <p>See my work</p>
+              <img src="/assets/svg/Hero-down.svg" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <a href="#" class="mobile-button">
+          <img src="assets/svg/mobile down.svg" alt="Expand Menu" />
+        </a>
+      </div>
+      <!-- end of hero -->
     </section>
+    <!-- end of home section -->
+    <script src="js/script.js"></script>
   </body>
 </html>
