@@ -18,6 +18,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scrollbar-width: thin;
   text-decoration: none;
 }
 
@@ -39,7 +40,7 @@ body {
 
 /* header */
 .header {
-  max-width: 1440px;
+  max-width: 144rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -159,7 +160,7 @@ body {
 .hero-h1 {
   font-size: clamp(4.6rem, 0.0118rem + 11.7647vw, 5.6rem);
   line-height: clamp(6rem, 1.4118rem + 11.7647vw, 7rem);
-  font-weight: bold;
+  font-weight: 900;
   font-family: var(--heading-family);
   background: var(--heading-color);
   -webkit-background-clip: text;
@@ -173,7 +174,7 @@ body {
   display: none;
   font-size: 5.4rem;
   line-height: 6.4rem;
-  font-weight: bold;
+  font-weight: 900;
   font-family: var(--heading-family);
   background: var(--heading-color);
   -webkit-background-clip: text;
@@ -188,6 +189,7 @@ body {
   display: flex;
   align-items: center;
   gap: 3.2rem;
+  opacity: 75%;
 }
 
 .hero-down {
@@ -208,6 +210,8 @@ body {
   background: var(--heading-color);
   gap: 1.2rem;
   border-radius: 3rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1),
+    0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .button-flex p {
@@ -226,6 +230,53 @@ body {
   max-width: 84.5rem;
 }
 /* end of hero */
+
+/* skills */
+.skills {
+  min-height: 100vh;
+}
+
+.skills-h1 {
+  font-family: var(--heading-family);
+  background: var(--heading-color);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2.8rem, 0.0471rem + 7.0588vw, 3.4rem);
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2.4rem;
+}
+
+.skills-flex {
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: 6.4rem 3.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+}
+
+.skills-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.skills-col p {
+  font-family: var(--font-family);
+  color: var(--black-text);
+  font-size: 1.3rem;
+  opacity: 75%;
+}
+
+.skills-svg {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+/* end of skills */
 
 /* 475px */
 @media screen and (min-width: 475px) {
@@ -246,7 +297,7 @@ body {
 /* 640px */
 @media screen and (min-width: 640px) {
   .hero {
-    padding: clamp(11.2rem, -48.8rem + 93.75vw, 23.2rem) 3.2rem 0 3.2rem;
+    padding: clamp(11.2rem, -33.856rem + 70.4vw, 20rem) 3.2rem 0 3.2rem;
     gap: 1.4rem;
   }
 
@@ -260,7 +311,7 @@ body {
 
   .hero-h1-desktop {
     display: block;
-    font-size: clamp(5.4rem, 0.9rem + 7.0312vw, 6.3rem);
+    font-size: clamp(5.3rem, 0.3rem + 7.8125vw, 6.3rem);
     line-height: clamp(6.4rem, 0.05rem + 9.9219vw, 7.67rem);
   }
 
@@ -275,6 +326,16 @@ body {
   .my-name {
     font-size: clamp(2.4rem, -3.6rem + 9.375vw, 3.6rem);
   }
+  /* skills */
+  .skills-h1 {
+    font-size: calc(
+      6.199999999999999rem - clamp(2.8rem, -0.2rem + 4.6875vw, 3.4rem)
+    );
+  }
+
+  .skills-flex {
+    padding: clamp(6.4rem, 2.4rem + 6.25vw, 7.2rem) 3.2rem;
+  }
 }
 
 /* 768px */
@@ -284,7 +345,7 @@ body {
   }
 
   .hero {
-    padding: calc(35.9rem - clamp(12.7rem, -18.8rem + 41.0156vw, 23.2rem))
+    padding: calc(32.7rem - clamp(12.7rem, -8.8618rem + 28.1853vw, 20rem))
       clamp(3.2rem, -10.6rem + 17.9687vw, 7.8rem) 0
       clamp(3.2rem, -10.6rem + 17.9687vw, 7.8rem);
     gap: 1.2rem;
@@ -296,6 +357,25 @@ body {
   }
   .my-name {
     font-size: clamp(3.6rem, 2.1rem + 1.9531vw, 4.1rem);
+  }
+  /* skills */
+  .skills-h1 {
+    font-size: clamp(2.8rem, 1rem + 2.3437vw, 3.4rem);
+  }
+
+  .skills-flex {
+    max-width: 60rem;
+    column-gap: clamp(1.5rem, -1.5rem + 3.9062vw, 2.5rem);
+    row-gap: clamp(2.5rem, -0.5rem + 3.9062vw, 3.5rem);
+  }
+
+  .skills-col p {
+    font-size: clamp(1.3rem, 1rem + 0.3906vw, 1.4rem);
+  }
+
+  .skills-svg {
+    width: clamp(7rem, 4rem + 3.9062vw, 8rem);
+    aspect-ratio: 1;
   }
 }
 
@@ -335,6 +415,19 @@ body {
   .button-flex p {
     font-size: 1.6rem;
   }
+
+  /* skills */
+  .skills-h1 {
+    font-size: clamp(3.4rem, 1.8rem + 1.5625vw, 3.8rem);
+  }
+
+  .skills-col p {
+    font-size: clamp(1.4rem, 0.6rem + 0.7813vw, 1.6rem);
+  }
+
+  .skills-flex {
+    padding: clamp(7.2rem, -3.2rem + 10.1563vw, 9.8rem) 3.2rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -365,6 +458,10 @@ body {
 
   .hero-down {
     gap: 6.4rem;
+  }
+
+  .skills-h1 {
+    margin-top: 8rem;
   }
 }
 
