@@ -232,9 +232,9 @@ body {
 /* end of hero */
 
 /* skills */
-.skills {
-  min-height: 100vh;
-}
+/* .skills {
+  min-height: 80vh;
+} */
 
 .skills-h1 {
   font-family: var(--heading-family);
@@ -277,6 +277,73 @@ body {
   border-radius: 50%;
 }
 /* end of skills */
+
+/* marquee */
+.marquee-box {
+  position: relative;
+  background-color: var(--primary-color);
+  opacity: 75%;
+  padding-block: 2.4rem;
+}
+
+.marquee-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  transform: rotate(1.38deg);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 50%;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-box:hover .marquee .service-container .slide {
+  animation-play-state: paused;
+}
+
+.marquee {
+  font-family: var(--heading-family);
+  padding-inline: 3.2rem;
+  max-width: 144rem;
+  margin-inline: auto;
+  color: #ffffff;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.service-container {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+  width: max-content;
+}
+.slide h1 {
+  margin: 0 clamp(1.8rem, 1.4309rem + 0.9464vw, 2.4rem);
+  font-size: clamp(2.4rem, 2.1539rem + 0.6309vw, 2.8rem);
+  font-weight: 500;
+  opacity: 75%;
+  display: inline;
+}
+
+/* end of marquee */
 
 /* 475px */
 @media screen and (min-width: 475px) {
@@ -377,6 +444,11 @@ body {
     width: clamp(7rem, 4rem + 3.9062vw, 8rem);
     aspect-ratio: 1;
   }
+
+  /* marquee */
+  .marquee {
+    padding-inline: clamp(3.2rem, -10.6rem + 17.9687vw, 7.8rem);
+  }
 }
 
 /* 1024px */
@@ -427,6 +499,11 @@ body {
 
   .skills-flex {
     padding: clamp(7.2rem, -3.2rem + 10.1563vw, 9.8rem) 3.2rem;
+  }
+
+  /* marquee */
+  .marquee {
+    padding-inline: clamp(7.8rem, 1rem + 6.6406vw, 9.5rem);
   }
 }
 
