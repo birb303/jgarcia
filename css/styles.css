@@ -232,10 +232,6 @@ body {
 /* end of hero */
 
 /* skills */
-/* .skills {
-  min-height: 80vh;
-} */
-
 .skills-h1 {
   font-family: var(--heading-family);
   background: var(--heading-color);
@@ -284,6 +280,7 @@ body {
   background-color: var(--primary-color);
   opacity: 75%;
   padding-block: 2.4rem;
+  margin-bottom: clamp(5rem, 3.9683rem + 2.6455vw, 6rem);
 }
 
 .marquee-box::after {
@@ -342,8 +339,142 @@ body {
   opacity: 75%;
   display: inline;
 }
-
 /* end of marquee */
+
+/* project */
+.project {
+  min-height: 100vh;
+  padding-inline: clamp(1.6rem, -5.7412rem + 18.8235vw, 3.2rem);
+  padding-block: clamp(5rem, 3.9683rem + 2.6455vw, 6rem);
+}
+
+.project-h1 {
+  font-family: var(--heading-family);
+  background: var(--heading-color);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2.8rem, 0.0471rem + 7.0588vw, 3.4rem);
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 7rem;
+}
+
+.project-card {
+  position: relative;
+  width: 32.23rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem; /* Add some padding for visual spacing */
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34.1rem;
+  height: 51rem;
+  background: var(--primary-color);
+  opacity: 0.05;
+  border-radius: 1.275rem;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border: 0.1rem solid var(--black-text);
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6.4rem, 4.0229rem + 6.0952vw, 12.8rem);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.card-h1 {
+  color: var(--black-text);
+  font-family: var(--heading-family);
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 2.1rem;
+  opacity: 75%;
+}
+
+.card-p {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: var(--black-text);
+  opacity: 75%;
+}
+
+.info-tools {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.tools-container {
+  padding: 0.6rem 1.2rem;
+  background: rgba(67, 152, 234, 0.2);
+  /* opacity: 20%; */
+  border-radius: 2.8rem;
+  z-index: -1;
+}
+
+.tools {
+  color: var(--black-text);
+  opacity: 75%;
+  font-family: var(--heading-family);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.info-direct {
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem;
+}
+
+.direct-to {
+  display: flex;
+  gap: 0.647rem;
+  align-items: center;
+}
+
+.direct-to p {
+  font-size: 1.4rem;
+  color: var(--black-text);
+}
+
+.direct-to .direct-github {
+  width: 2.018rem;
+  height: 2.073rem;
+}
+
+.direct-to .direct-project {
+  width: 2.018rem;
+  height: 2.179rem;
+}
+
+.direct-to .direct-figma {
+  width: 1.5rem;
+  height: 2.1rem;
+}
+/* end of project */
 
 /* 475px */
 @media screen and (min-width: 475px) {
@@ -358,6 +489,38 @@ body {
   .hero-h1 {
     font-size: 5.6rem;
     line-height: 7rem;
+  }
+
+  /* project */
+  .project-h1 {
+    padding-bottom: 8.4rem;
+  }
+
+  .project-card {
+    width: 38.6rem;
+  }
+
+  .project-card::after {
+    width: 40.8rem;
+    height: 52.5rem;
+  }
+
+  .card-img {
+    width: 38.6rem;
+    height: 21.1rem;
+  }
+
+  .card-h1 {
+    padding-top: 2.5rem;
+  }
+
+  .info-tools {
+    gap: 1.6rem;
+  }
+
+  .tools-container {
+    padding: 0.647rem 1.295rem;
+    border-radius: 3.398rem;
   }
 }
 
@@ -403,6 +566,18 @@ body {
   .skills-flex {
     padding: clamp(6.4rem, 2.4rem + 6.25vw, 7.2rem) 3.2rem;
   }
+
+  /* project */
+  .project-h1 {
+    font-size: calc(
+      6.199999999999999rem - clamp(2.8rem, -0.2rem + 4.6875vw, 3.4rem)
+    );
+  }
+
+  .project-card::after {
+    width: 44.3rem;
+    height: 53.5rem;
+  }
 }
 
 /* 768px */
@@ -425,6 +600,7 @@ body {
   .my-name {
     font-size: clamp(3.6rem, 2.1rem + 1.9531vw, 4.1rem);
   }
+
   /* skills */
   .skills-h1 {
     font-size: clamp(2.8rem, 1rem + 2.3437vw, 3.4rem);
@@ -448,6 +624,73 @@ body {
   /* marquee */
   .marquee {
     padding-inline: clamp(3.2rem, -10.6rem + 17.9687vw, 7.8rem);
+  }
+
+  .marquee-box {
+    margin-bottom: clamp(6rem, 3rem + 3.9062vw, 7rem);
+  }
+
+  /* project */
+  .project {
+    padding-inline: clamp(3.6rem, -9rem + 16.4062vw, 7.8rem);
+    padding-block: clamp(6rem, 3rem + 3.9062vw, 7rem);
+  }
+
+  .project-h1 {
+    font-size: clamp(2.8rem, 1rem + 2.3437vw, 3.4rem);
+    padding-bottom: 10rem;
+  }
+
+  .project-card {
+    position: relative;
+    min-width: 70.2rem;
+    flex-direction: row;
+    gap: 2.6rem;
+  }
+
+  .project-card::after {
+    background: var(--primary-color);
+    width: 54.9rem;
+    height: 27.6rem;
+    left: 62%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-img {
+    width: 38.6rem;
+    height: 21.1rem;
+    border-radius: 0;
+  }
+
+  .card-info {
+    text-align: start;
+    gap: 1.6rem;
+  }
+
+  .card-h1 {
+    font-size: 1.942rem;
+    padding-top: 0;
+  }
+
+  .card-p {
+    font-size: 1.3rem;
+  }
+
+  .info-tools {
+    justify-content: start;
+    gap: 1.3rem;
+  }
+
+  .tools {
+    font-size: 1.3rem;
+  }
+
+  .info-direct {
+    justify-content: start;
+  }
+
+  .direct-to p {
+    font-size: 1.3rem;
   }
 }
 
@@ -502,8 +745,77 @@ body {
   }
 
   /* marquee */
+  .marquee-box {
+    margin-bottom: clamp(7rem, 3rem + 3.9063vw, 8rem);
+  }
+
   .marquee {
     padding-inline: clamp(7.8rem, 1rem + 6.6406vw, 9.5rem);
+  }
+
+  /* project */
+  .project {
+    padding-inline: clamp(7.8rem, 1rem + 6.6406vw, 9.5rem);
+    padding-block: clamp(7rem, 3rem + 3.9063vw, 8rem);
+  }
+
+  .project-h1 {
+    font-size: clamp(3.4rem, 1.8rem + 1.5625vw, 3.8rem);
+    padding-bottom: 11.5rem;
+  }
+
+  .project-card {
+    position: relative;
+    min-width: 86.8rem;
+    gap: 3.2rem;
+  }
+
+  .project-card::after {
+    background: var(--primary-color);
+    width: 67.835rem;
+    height: 34.1rem;
+    left: 62%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-img {
+    width: 47.7rem;
+    height: 26.1rem;
+  }
+
+  .card-info {
+    gap: 2.2rem;
+  }
+
+  .card-h1 {
+    font-size: 2.4rem;
+  }
+
+  .card-p {
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+  }
+
+  .info-tools {
+    justify-content: start;
+    gap: 1.6rem;
+  }
+
+  .tools-container {
+    padding: 1rem 1.6rem;
+  }
+
+  .tools {
+    font-size: 1.4rem;
+  }
+
+  .info-direct {
+    justify-content: start;
+    gap: 3.2rem;
+  }
+
+  .direct-to p {
+    font-size: 1.4rem;
   }
 }
 
@@ -537,11 +849,120 @@ body {
     gap: 6.4rem;
   }
 
+  /* skills */
   .skills-h1 {
     margin-top: 8rem;
+  }
+
+  /* project */
+  .project {
+    padding-inline: clamp(9.5rem, 8.7rem + 0.625vw, 9.6rem);
+  }
+
+  .project-h1 {
+    font-size: clamp(3.4rem, 1.8rem + 1.5625vw, 3.8rem);
+    padding-bottom: 12.7rem;
+  }
+
+  .project-card {
+    min-width: 109.1rem;
+    gap: 6.4rem;
+  }
+
+  .project-card::after {
+    background: var(--primary-color);
+    width: 101.9rem;
+    height: 39.3rem;
+    left: 53%;
+  }
+
+  .card-img {
+    width: 51rem;
+    height: 27.9rem;
+  }
+
+  .card-info {
+    gap: 3.8rem;
+  }
+
+  .card-h1 {
+    font-size: 2.8rem;
+    max-width: 37.1rem;
+  }
+
+  .card-p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    max-width: 47rem;
+  }
+
+  .tools-container {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .tools {
+    font-size: 1.6rem;
+  }
+
+  .info-direct {
+    gap: 6.4rem;
+  }
+
+  .direct-to p {
+    font-size: 1.6rem;
+  }
+
+  .direct-to .direct-github {
+    width: 2.201rem;
+    height: 2.206rem;
+  }
+
+  .direct-to .direct-project {
+    width: 2.201rem;
+    height: 2.376rem;
+  }
+
+  .direct-to .direct-figma {
+    width: 1.5rem;
+    height: 2.2rem;
   }
 }
 
 /* 1440px */
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
+  /* project */
+  .project-h1 {
+    font-size: clamp(3.4rem, 1.8rem + 1.5625vw, 3.8rem);
+    padding-bottom: 12.7rem;
+  }
+
+  .project-card {
+    min-width: 124.8rem;
+  }
+
+  .project-card::after {
+    background: var(--primary-color);
+    width: 109.7rem;
+    height: 42.3rem;
+    left: 56%;
+  }
+
+  .card-img {
+    width: 59.6rem;
+    height: 32.6rem;
+  }
+
+  .direct-to .direct-github {
+    width: 2.2rem;
+    height: 2.259rem;
+  }
+
+  .direct-to .direct-project {
+    width: 2.2rem;
+    height: 2.376rem;
+  }
+  .direct-to .direct-figma {
+    width: 1.6rem;
+    height: 2.3rem;
+  }
 }
