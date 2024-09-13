@@ -65,10 +65,14 @@ body {
 
 .navfont a {
   text-decoration: none;
-
   font-size: 1.6rem;
   font-family: var(--heading-family);
   color: var(--black-text);
+  transition: color 0.3s ease-in-out;
+}
+
+.navfont a:hover {
+  color: var(--primary-color);
 }
 
 .mobile-nav-toggle {
@@ -116,7 +120,6 @@ body {
     background-image: url("../assets/svg/burger nav.svg");
     background-repeat: no-repeat;
     background-color: transparent;
-    /* background-color: red; */
     z-index: 9999;
     width: 2.8rem;
     height: 2.5rem;
@@ -155,6 +158,7 @@ body {
   font-family: var(--heading-family);
   color: var(--black-text);
   opacity: 75%;
+  cursor: pointer;
 }
 
 .hero-h1 {
@@ -168,6 +172,7 @@ body {
   text-align: center;
   background-clip: text;
   color: transparent;
+  cursor: pointer;
 }
 
 .hero-h1-desktop {
@@ -183,6 +188,7 @@ body {
   background-clip: text;
   color: transparent;
   max-width: 109rem;
+  cursor: pointer;
 }
 
 .hero-social-media {
@@ -201,6 +207,11 @@ body {
 
 .desktop-button {
   display: none;
+  transition: transform 0.2s ease;
+}
+
+.desktop-button:hover {
+  transform: scale(1.075);
 }
 
 .button-flex {
@@ -228,6 +239,7 @@ body {
   opacity: 75%;
   text-align: center;
   max-width: 84.5rem;
+  cursor: pointer;
 }
 /* end of hero */
 
@@ -259,6 +271,11 @@ body {
   flex-direction: column;
   gap: 1.6rem;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skills-col:hover {
+  transform: translateY(-7px);
 }
 
 .skills-col p {
@@ -474,6 +491,14 @@ body {
   width: 1.5rem;
   height: 2.1rem;
 }
+
+.info-direct a {
+  transition: transform 0.2s ease;
+}
+
+.info-direct a:hover {
+  transform: scale(1.1);
+}
 /* end of project */
 
 /* about */
@@ -666,7 +691,6 @@ body {
   font-size: 1.6rem;
   color: var(--black-text);
   line-height: 2.7rem;
-  opacity: 75%;
 }
 
 .footer-media {
@@ -678,6 +702,8 @@ body {
 .made-with {
   display: none;
   align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .fb-ig {
@@ -688,6 +714,31 @@ body {
 .fb-ig a img {
   height: 1.9rem;
   width: auto;
+  display: inline-block;
+}
+
+.fb-ig a {
+  transition: transform 0.2s ease;
+}
+
+.fb-ig a:hover {
+  transform: scale(1.2);
+}
+
+.made-with a {
+  transition: transform 0.2s ease;
+}
+
+.made-with a:hover {
+  transform: scale(1.2);
+}
+
+.check-me {
+  position: absolute;
+  right: 5rem;
+  top: -60px;
+  width: clamp(6.9rem, 6.2143rem + 0.8929vw, 7.5rem);
+  height: auto;
 }
 
 /* end of footer */
@@ -1294,6 +1345,14 @@ body {
     gap: 3.2rem;
     align-items: center;
     color: var(--black-text);
+  }
+
+  .social-media a img {
+    transition: transform 0.2s ease;
+  }
+
+  .social-media a img:hover {
+    transform: scale(1.075);
   }
 
   .hero-social-media {

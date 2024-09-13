@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Style -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animation.css" />
     <link
       rel="icon"
       type="image/x-icon"
       href="assets/svg/jgarcia..svg"
       sizes="any"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>jgarcia.</title>
     <!-- Font -->
@@ -102,7 +104,7 @@
         </header>
       </div>
       <!-- hero -->
-      <div class="hero-down">
+      <div class="hero-down" data-aos="fade-right" data-aos-duration="500">
         <div class="hero">
           <p class="my-name">Hey there, I'm Jairo</p>
           <h1 class="hero-h1">DESIGN AND DEVELOP</h1>
@@ -160,7 +162,7 @@
     <!-- skills section -->
     <section class="skills" id="skills">
       <h1 class="skills-h1">Skills & Learnings</h1>
-      <div class="skills-flex">
+      <div class="skills-flex" data-aos="fade-right" data-aos-duration="500">
         <div class="skills-col">
           <img class="skills-svg" src="assets/svg/html.svg" alt="html" />
           <p>Html</p>
@@ -250,10 +252,10 @@
     <!-- end of marquee -->
 
     <!-- project -->
-    <section class="project" id="project">
+    <section class="project hidden" id="project">
       <h1 class="project-h1">Projects</h1>
       <div class="project-container">
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-duration="500">
           <img
             class="card-img"
             src="/assets/img/my-portfolio.png"
@@ -307,7 +309,7 @@
             </div>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-duration="500">
           <img
             class="card-img"
             src="/assets/img/trrye-portfolio.png"
@@ -384,7 +386,11 @@
     <section class="about" id="about">
       <h1 class="about-h1">About</h1>
       <div class="about-container">
-        <div class="img-container">
+        <div
+          class="img-container"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <img
             class="about-img"
             src="assets/img/about-img.png"
@@ -398,7 +404,7 @@
           />
         </div>
 
-        <div class="about-info">
+        <div class="about-info" data-aos="fade-right" data-aos-duration="500">
           <h1>Hello I am <span>Jairo Garcia.</span></h1>
           <p>
             I am <span>20yrs old</span>. Who loves designing and developing
@@ -420,11 +426,11 @@
     <!-- contact -->
     <section class="contact" id="contact">
       <h1 class="contact-h1">Contact</h1>
-      <p class="contact-p">
+      <p class="contact-p" data-aos="fade-right" data-aos-duration="500">
         Do you have a project in mind? We can work together. As a front-end
         developer, I’m always giving my best.
       </p>
-      <div class="call-container">
+      <div class="call-container" data-aos="fade-right" data-aos-duration="500">
         <div class="call location">
           <img
             class="loc"
@@ -459,6 +465,10 @@
     <!-- end of contact -->
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
   <footer class="footer">
@@ -474,13 +484,14 @@
       </div>
     </div>
     <div class="made-with">
-      <p>Design with&nbsp;</p>
+      <p>Design with&nbsp;&nbsp;</p>
       <a
         href="https://www.figma.com/design/O8YUlWSiEcyvVVbMCtZfuM/My-portfolio?node-id=0-1&t=NsZdwZyzS7A9kru9-1"
         target="_blank"
         ><img src="assets/svg/figma-footer.svg" alt="figma"
       /></a>
-      <p>&nbsp;by Jairo Garcia</p>
+      <p>&nbsp;&nbsp;by Jairo Garcia</p>
+      <img class="check-me" src="assets/svg/check me!.svg" alt="check me" />
     </div>
   </footer>
 </html>
