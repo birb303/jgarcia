@@ -1,0 +1,67 @@
+/* =============================================
+   FOOTER STYLES
+   ============================================= */
+
+.footer {
+  max-width: 144rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.6rem, -5.7412rem + 18.8235vw, 3.2rem);
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  color: var(--black-text);
+  line-height: 2.7rem;
+}
+
+.footer-media {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.made-with {
+  display: none;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.fb-ig {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.fb-ig a img {
+  height: 1.9rem;
+  width: auto;
+  display: inline-block;
+}
+
+.fb-ig a {
+  transition: transform 0.2s ease;
+}
+
+.fb-ig a:hover {
+  transform: scale(1.2);
+}
+
+.made-with a {
+  transition: transform 0.2s ease;
+}
+
+.made-with a:hover {
+  transform: scale(1.2);
+}
+
+.check-me {
+  position: absolute;
+  right: 5rem;
+  top: -60px;
+  width: clamp(6.9rem, 6.2143rem + 0.8929vw, 7.5rem);
+  height: auto;
+}

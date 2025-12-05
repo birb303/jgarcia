@@ -1,0 +1,82 @@
+/* =============================================
+   CONTACT SECTION STYLES
+   ============================================= */
+
+.contact {
+  padding-inline: clamp(1.6rem, -5.7412rem + 18.8235vw, 3.2rem);
+  padding-top: clamp(5rem, 3.9683rem + 2.6455vw, 6rem);
+}
+
+.contact-h1 {
+  font-family: var(--heading-family);
+  background: var(--heading-color);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2.8rem, 0.0471rem + 7.0588vw, 3.4rem);
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 2.4rem;
+}
+
+.contact-p {
+  font-family: var(--heading-family);
+  line-height: 2.2rem;
+  color: var(--black-text);
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 75%;
+  max-width: 34.6rem;
+  margin-inline: auto;
+}
+
+/* Contact Info Container */
+.call-container {
+  margin-top: 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 6.4rem;
+  max-width: 26.8rem;
+  margin-inline: auto;
+  margin-bottom: clamp(11.2rem, 6.7635rem + 11.3757vw, 15.5rem);
+}
+
+.call {
+  font-family: var(--font-family);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.call-p {
+  gap: 0.5rem;
+}
+
+.call-p p {
+  font-size: 1.8rem;
+  color: var(--black-text);
+  opacity: 75%;
+  line-height: 3.8rem;
+}
+
+.call-bold {
+  font-family: var(--heading-family);
+  font-weight: bold;
+}
+
+/* Contact Icons */
+.loc {
+  width: 4rem;
+  height: auto;
+}
+
+.mail {
+  width: 4rem;
+  height: auto;
+}
+
+.num {
+  width: 4rem;
+  height: auto;
+}

@@ -1,0 +1,49 @@
+/* =============================================
+   SKILLS SECTION STYLES
+   ============================================= */
+
+.skills-h1 {
+  font-family: var(--heading-family);
+  background: var(--heading-color);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2.8rem, 0.0471rem + 7.0588vw, 3.4rem);
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2.4rem;
+}
+
+.skills-flex {
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: 6.4rem 3.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+}
+
+.skills-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skills-col:hover {
+  transform: translateY(-7px);
+}
+
+.skills-col p {
+  font-family: var(--font-family);
+  color: var(--black-text);
+  font-size: 1.3rem;
+  opacity: 75%;
+}
+
+.skills-svg {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}

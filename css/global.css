@@ -1,0 +1,102 @@
+/* =============================================
+   GLOBAL STYLES
+   Variables, Reset, and Common Styles
+   ============================================= */
+
+/* Variables */
+:root {
+  --body-color: #ffffff;
+  --black: #261f22;
+  --primary-color: #4398ea;
+  --secondary-color: #7492bf;
+  --heading-color: linear-gradient(to right, #4398ea 0%, #7492bf 100%);
+  --black-text: #261f22;
+  --white-text: #ffffff;
+
+  /* font-family */
+  --font-family: "Mulish", inter;
+  --heading-family: Proza libre, inter;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: thin;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--body-color);
+  overflow-x: hidden;
+}
+
+/* =============================================
+   COMMON/REUSABLE STYLES
+   ============================================= */
+
+/* Section Headings - Gradient Style */
+.section-heading {
+  font-family: var(--heading-family);
+  background: var(--heading-color);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2.8rem, 0.0471rem + 7.0588vw, 3.4rem);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Common Section Padding */
+.section-padding {
+  padding-inline: clamp(1.6rem, -5.7412rem + 18.8235vw, 3.2rem);
+  padding-block: clamp(5rem, 3.9683rem + 2.6455vw, 6rem);
+}
+
+/* Common Box Shadow */
+.box-shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow-heavy {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1),
+    0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Opacity */
+.text-opacity {
+  opacity: 75%;
+}
+
+/* Screen Reader Only - Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  padding: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Hover Scale Effect */
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.075);
+}
+
+/* Line Divider */
+.line {
+  border-bottom: 1px solid rgba(38, 31, 34, 0.1);
+  width: 100%;
+}

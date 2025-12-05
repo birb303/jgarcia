@@ -1,0 +1,98 @@
+/* =============================================
+   ABOUT SECTION STYLES
+   ============================================= */
+
+.about {
+  padding-inline: clamp(1.6rem, -5.7412rem + 18.8235vw, 3.2rem);
+  padding-block: clamp(5rem, 3.9683rem + 2.6455vw, 6rem);
+}
+
+.about-h1 {
+  font-family: var(--heading-family);
+  background: var(--heading-color);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2.8rem, 0.0471rem + 7.0588vw, 3.4rem);
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 7rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6.2rem;
+}
+
+/* Image Container */
+.img-container {
+  position: relative;
+  align-self: center;
+}
+
+.about-img {
+  border-radius: clamp(2.3rem, 0.4647rem + 4.7059vw, 2.7rem);
+  width: clamp(32.5rem, 4.5118rem + 71.7647vw, 38.6rem);
+  height: clamp(27rem, 3.6rem + 60vw, 32.1rem);
+}
+
+.img-container::after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  right: -1.5rem;
+  width: clamp(10.9rem, 1.2647rem + 24.7059vw, 13rem);
+  aspect-ratio: 1;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.eyy {
+  position: absolute;
+  bottom: -3rem;
+  right: -1.5rem;
+  z-index: 99;
+  width: clamp(10.9rem, 1.2647rem + 24.7059vw, 13rem);
+  aspect-ratio: 1;
+}
+
+/* Rotating Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.designer {
+  animation: rotate 8s linear infinite;
+}
+
+/* About Info */
+.about-info {
+  text-align: center;
+  max-width: clamp(34.3rem, 3.1rem + 80vw, 41.1rem);
+  margin-inline: auto;
+}
+
+.about-info h1 {
+  font-size: 2.8rem;
+  font-family: var(--heading-family);
+  font-weight: 400;
+  padding-bottom: 3.2rem;
+}
+
+.about-info span {
+  background: var(--primary-color);
+  background-clip: text;
+  color: transparent;
+}
+
+.about-info p {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: rgba(38, 31, 34, 0.75);
+}

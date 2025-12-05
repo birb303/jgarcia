@@ -1,0 +1,146 @@
+/* =============================================
+   PROJECT SECTION STYLES
+   ============================================= */
+
+.project {
+  padding-inline: clamp(1.6rem, -5.7412rem + 18.8235vw, 3.2rem);
+  padding-block: clamp(5rem, 3.9683rem + 2.6455vw, 6rem);
+}
+
+.project-h1 {
+  font-family: var(--heading-family);
+  background: var(--heading-color);
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2.8rem, 0.0471rem + 7.0588vw, 3.4rem);
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: clamp(5.4rem, 0.8118rem + 11.7647vw, 6.4rem);
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6.4rem, 4.0229rem + 6.0952vw, 12.8rem);
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  width: 32.23rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34.1rem;
+  height: 52rem;
+  background: var(--primary-color);
+  opacity: 0.05;
+  border-radius: 1.275rem;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border: 0.1rem solid var(--black-text);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Info */
+.card-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.card-h1 {
+  color: var(--black-text);
+  font-family: var(--heading-family);
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 2.1rem;
+  opacity: 75%;
+}
+
+.card-p {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: var(--black-text);
+  opacity: 75%;
+}
+
+/* Tools Tags */
+.info-tools {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.tools-container {
+  padding: 0.6rem 1.2rem;
+  background: rgba(67, 152, 234, 0.2);
+  border-radius: 2.8rem;
+  z-index: -1;
+}
+
+.tools {
+  color: var(--black-text);
+  opacity: 75%;
+  font-family: var(--heading-family);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* Direct Links */
+.info-direct {
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem;
+}
+
+.direct-to {
+  display: flex;
+  gap: 0.647rem;
+  align-items: center;
+}
+
+.direct-to p {
+  font-size: 1.4rem;
+  color: var(--black-text);
+}
+
+.direct-to .direct-github {
+  width: 2.018rem;
+  height: 2.073rem;
+}
+
+.direct-to .direct-project {
+  width: 2.018rem;
+  height: 2.179rem;
+}
+
+.direct-to .direct-figma {
+  width: 1.5rem;
+  height: 2.1rem;
+}
+
+.info-direct a {
+  transition: transform 0.2s ease;
+}
+
+.info-direct a:hover {
+  transform: scale(1.1);
+}

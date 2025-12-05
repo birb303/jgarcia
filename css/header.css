@@ -1,0 +1,41 @@
+/* =============================================
+   HEADER & NAVIGATION STYLES
+   ============================================= */
+
+/* Header */
+.header {
+  max-width: 144rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+}
+
+.social-media {
+  display: none;
+}
+
+/* Navigation */
+.nav-flex {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.navfont a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: var(--heading-family);
+  color: var(--black-text);
+  transition: color 0.3s ease-in-out;
+}
+
+.navfont a:hover {
+  color: var(--primary-color);
+}
+
+/* Mobile Navigation Toggle */
+.mobile-nav-toggle {
+  display: none;
+}
