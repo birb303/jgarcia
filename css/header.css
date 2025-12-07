@@ -2,6 +2,26 @@
    HEADER & NAVIGATION STYLES
    ============================================= */
 
+/* Header Wrapper - Sticky Container */
+.line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--header-color);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.line.header-hidden {
+  transform: translateY(-100%);
+}
+
+.line.header-scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Header */
 .header {
   max-width: 144rem;

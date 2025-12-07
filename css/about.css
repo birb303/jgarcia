@@ -35,6 +35,7 @@
   border-radius: clamp(2.3rem, 0.4647rem + 4.7059vw, 2.7rem);
   width: clamp(32.5rem, 4.5118rem + 71.7647vw, 38.6rem);
   height: clamp(27rem, 3.6rem + 60vw, 32.1rem);
+  object-fit: cover;
 }
 
 .img-container::after {
